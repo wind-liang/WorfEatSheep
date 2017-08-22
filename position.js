@@ -315,13 +315,23 @@ Position.prototype.legalMoveJump = function(src,dst) {
     }
 }
 Position.prototype.worfLive = function() {
+    if(this.worfGetLife()){
+        this.worfs++
+    }
     if(this.isWalk()){
         this.worfs--;
     }
 }
+Position.prototype.worfGetLife = function() {
+    if(this.diedWorf!=0 && this.squares[this.diedWorf]==1){
+        this.diedWorf=0;
+        return true;
+    }
+
+}
 Position.prototype.isWalkDetection = function() {
     for (var i = 0; i < arguments.length; i++) {
-        if(!(this.squares[arguments[i]]==2)){
+        if(!(this.squares[arguments[i]]==2||this.squares[arguments[i]]==1)){
             return false;
         }
     }

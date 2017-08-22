@@ -87,6 +87,7 @@ Board.prototype.clickSquare = function(sq_) {
     if(pc==0&&this.sqSelected==0&&this.pos.sdPlayer==2){
         this.addSheep(sq);
         this.worfLive();
+        this.worfLive();
         this.flushBoard();
     }
     if (pc && pc==this.pos.sdPlayer) {
@@ -109,6 +110,7 @@ Board.prototype.clickSquare = function(sq_) {
         // 点击的不是己方棋子（对方棋子或者无子的位置），但有子选中了(一定是自己的子)，那么执行这个走法
         this.addMove(MOVE(this.sqSelected, sq));
         this.worfLive();
+        this.worfLive();
         this.flushBoard();
 
     }
@@ -117,7 +119,7 @@ Board.prototype.clickSquare = function(sq_) {
     log(this.pos.sheeps);
     log(this.pos.liveSheeps);
     log(this.pos.worfs);
-    if(this.pos.worfs==0){
+    if(this.pos.worfs<=0){
         alert("羊胜利！")
     }
 }
