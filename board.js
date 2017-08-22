@@ -36,7 +36,7 @@ function SQ_Y(sq,type) {
 
 // Board对象的初始化代码，位于index.html中
 function Board(container,sheepText,images) {
-    // sheepText.text="11"
+    this.sheepText=sheepText;
     this.images = images;			// 图片路径
     this.style = container.style;
     var style=this.style
@@ -131,6 +131,7 @@ Board.prototype.clickSquare = function(sq_) {
     if(this.pos.liveSheeps<=12&&this.pos.sheeps==0){
         alert("羊胜利！")
     }
+    this.sheepText.innerHTML="未下的羊："+this.pos.sheeps;
 
 }
 // 判断这步棋是否合法，如果合法，则执行这步棋
