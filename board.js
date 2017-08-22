@@ -128,10 +128,11 @@ Board.prototype.clickSquare = function(sq_) {
     if(this.pos.worfs<=0){
         alert("羊胜利！")
     }
+    this.sheepText.innerHTML="未下的羊："+this.pos.sheeps;
     if(this.pos.liveSheeps<=12&&this.pos.sheeps==0){
         alert("狼胜利！")
     }
-    this.sheepText.innerHTML="未下的羊："+this.pos.sheeps;
+
 
 }
 // 判断这步棋是否合法，如果合法，则执行这步棋
