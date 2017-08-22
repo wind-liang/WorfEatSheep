@@ -129,7 +129,7 @@ Board.prototype.clickSquare = function(sq_) {
         alert("羊胜利！")
     }
     if(this.pos.liveSheeps<=12&&this.pos.sheeps==0){
-        alert("羊胜利！")
+        alert("狼胜利！")
     }
     this.sheepText.innerHTML="未下的羊："+this.pos.sheeps;
 
