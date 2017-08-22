@@ -139,13 +139,16 @@ Board.prototype.addMove = function(mv) {
     }
 }
 Board.prototype.addSheep=function (sq) {
-    this.pos.addSheep(sq);
+    if(!this.pos.addSheep(sq)){
+        return
+    }
     this.sqSelected = 0;
-    if(this.pos.sdPlayer==1){
+    if(this.sdPlayer==1){
         this.pos.sdPlayer=2;
     }else{
         this.pos.sdPlayer=1;
     }
+
 }
 Board.prototype.worfLive = function() {
     this.pos.worfLive();

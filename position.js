@@ -85,7 +85,7 @@ function Position() {
 Position.prototype.clearBoard = function() {
     this.sdPlayer = 1;	// 该谁走棋。1-狼；2-羊
     this.squares = [];	// 这个就是一维棋局数组
-    this.sheeps=14;
+    this.sheeps=15;
     this.liveSheeps=8;
     this.worfs=2;
     this.diedWorf=0;
@@ -171,7 +171,11 @@ Position.prototype.addSheep = function(sq) {
         this.addPiece(sq, 2, ADD_PIECE);	// 将原来起点的棋子添加到终点
         this.sheeps--;
         this.liveSheeps++;
+        return true;
+    }else{
+        return false
     }
+
 }
 // 如果bDel为false，则将棋子pc添加进棋局中的sp位置；如果bDel为true，则删除sp位置的棋子。
 Position.prototype.addPiece = function(sq, pc, bDel) {
