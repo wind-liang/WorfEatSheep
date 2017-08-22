@@ -3,8 +3,8 @@ var log = console.log.bind(console)
 var BOARD_WIDTH = 500;
 var BOARD_HEIGHT = 900;
 var SQUARE_SIZE = 100;
-var WORF_SIZE=75;
-var SHEEP_SIZE=50;
+var WORF_SIZE=95;
+var SHEEP_SIZE=65;
 var SQUARE_LEFT = (BOARD_WIDTH - SQUARE_SIZE * 4) /2;
 var SQUARE_TOP = (BOARD_HEIGHT - SQUARE_SIZE * 8) /2;
 
@@ -192,16 +192,16 @@ Board.prototype.drawSquare = function(sq, selected) {
     img.height=img.style.height
     if(selected){
         if(1==this.pos.sdPlayer){
-            img.src = this.images + "bkm.gif";
+            img.src = this.images + "worf_select.gif";
         }else{
-            img.src = this.images + "ra.gif";
+            img.src = this.images + "sheep_select.gif";
         }
 
     }
     if(sq==this.pos.diedWorf){
         img.style.width = WORF_SIZE;
         img.style.height = WORF_SIZE;
-        img.src = this.images + "bkm.gif";
+        img.src = this.images + "worf_died.gif";
     }
 
 
