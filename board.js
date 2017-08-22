@@ -130,7 +130,7 @@ Board.prototype.clickSquare = function(sq_) {
         alert("羊胜利！")
     }
     if(this.pos.sdPlayer==1){
-        this.sheepText.innerHTML="未下的羊：1"+this.pos.sheeps+"<br>请狼走";
+        this.sheepText.innerHTML="未下的羊："+this.pos.sheeps+"<br>请狼走";
     }
     if(this.pos.sdPlayer==2){
         this.sheepText.innerHTML="未下的羊："+this.pos.sheeps+"<br>请羊走";
