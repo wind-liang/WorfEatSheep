@@ -35,17 +35,26 @@ function SQ_Y(sq,type) {
 }
 
 // Board对象的初始化代码，位于index.html中
-function Board(container, images) {
+function Board(container,sheepText,images) {
+    // sheepText.text="11"
     this.images = images;			// 图片路径
-    this.imgSquares = [];			// img数组，对应棋盘上的90个位置区域
-    this.pos = new Position();
-    this.pos.fromFen("9/9/2w/1sss/1s3s/1sss/2w/9/9 r - - 0 1");	// 根据FEN串初始化棋局
-
-    var style = container.style;
+    this.style = container.style;
+    var style=this.style
     style.position = "relative";
     style.width = BOARD_WIDTH + "px";
     style.height = BOARD_HEIGHT + "px";
-    style.background = "url(" + images + "board2.jpg)";
+    style.background = "url(" + this.images + "board2.jpg)";
+    this.container=container;
+}
+Board.prototype.startGame=function(){
+    this.imgSquares = [];			// img数组，对应棋盘上的90个位置区域
+    this.pos = new Position();
+    this.pos.fromFen("9/9/2w/1sss/1s3s/1sss/2w/9/9 r - - 0 1");	// 根据FEN串初始化棋局
+    var style=this.style
+    style.position = "relative";
+    style.width = BOARD_WIDTH + "px";
+    style.height = BOARD_HEIGHT + "px";
+    style.background = "url(" + this.images + "board2.jpg)";
     var this_ = this;
     for (var sq = 0; sq < 45; sq ++) {
         // 遍历虚拟棋盘的45个点
@@ -55,7 +64,7 @@ function Board(container, images) {
             continue;
         }
 
-        // 2.棋盘上的90个区域，每个区域都会定义一个对应的img标签
+        // 2.棋盘上的45个区域，每个区域都会定义一个对应的img标签
         var img = document.createElement("img");
         var style = img.style;
         style.position = "absolute";
@@ -69,7 +78,7 @@ function Board(container, images) {
         } (sq);
 
         // 4.将定义好的img标签追加到html中
-        container.appendChild(img);
+        this.container.appendChild(img);
 
         // 5.将img标签存储到imgSquares数组中，方便后续对该区域进行操作（比如，显示不同的棋子图片）
         this_.imgSquares.push(img);
@@ -78,7 +87,6 @@ function Board(container, images) {
     // 显示棋子图片
     this.flushBoard();
 }
-
 // 点击棋盘的响应函数。点击棋盘（棋子或者空位置），就会调用该函数。sq_是点击的位置
 Board.prototype.clickSquare = function(sq_) {
     var sq = sq_;						// 点击的位置
@@ -114,12 +122,13 @@ Board.prototype.clickSquare = function(sq_) {
         this.flushBoard();
 
     }
-
-
     log(this.pos.sheeps);
     log(this.pos.liveSheeps);
     log(this.pos.worfs);
     if(this.pos.worfs<=0){
+        alert("羊胜利！")
+    }
+    if(this.pos.liveSheeps<=12&&this.pos.sheeps==0){
         alert("羊胜利！")
     }
 

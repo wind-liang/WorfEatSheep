@@ -78,18 +78,18 @@ function CHAR_TO_PIECE(c) {
 }
 
 function Position() {
-
+    this.sheeps=15;
+    this.liveSheeps=8;
+    this.worfs=2;
+    this.diedWorf=0;
+    this.killSheep=0;
 }
 
 // 初始化棋局数组
 Position.prototype.clearBoard = function() {
     this.sdPlayer = 1;	// 该谁走棋。1-狼；2-羊
     this.squares = [];	// 这个就是一维棋局数组
-    this.sheeps=15;
-    this.liveSheeps=8;
-    this.worfs=2;
-    this.diedWorf=0;
-    this.killSheep=0;
+
     for (var sq = 0; sq < 45; sq ++) {
         this.squares.push(0);
     }

@@ -6,7 +6,6 @@
     <script type="text/javascript">
         var cssEl = document.createElement('style');
         document.documentElement.firstElementChild.appendChild(cssEl);
-
         function setPxPerRem(){
             var dpr = 1;
             //把viewport分成10份的rem，html标签的font-size设置为1rem的大小;
@@ -16,10 +15,10 @@
         setPxPerRem();
     </script>
     <style>
-        #container {
-            width: 100%;
-            height: 100%;
-        }
+        /*#container {*/
+            /*width: 100%;*/
+            /*height: 100%;*/
+        /*}*/
     </style>
     <script type="text/javascript" src="board.js"></script>
     <script type="text/javascript" src="position.js"></script>
@@ -28,14 +27,13 @@
 <body>
 
 <div style="text-align:center;white-space:nowrap">
-      <span class="td" style="margin-right:10px">
         <div id="container"></div>
-      </span>
+    <span id="sheepText" style="position: absolute; top: 20px; left: 20px;font-size:25px; color: sienna">未下的羊：15</span>
 </div>
-<script type="text/javascript"><!--
+<script >
 "use strict";
-
-var board = new Board(container, "images/");	// 创建棋盘
---></script>
+var board = new Board(container, sheepText,"images/");	// 创建棋盘
+board.startGame()
+</script>
 </body>
 </html>
