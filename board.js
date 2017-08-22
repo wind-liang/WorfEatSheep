@@ -122,6 +122,7 @@ Board.prototype.clickSquare = function(sq_) {
     if(this.pos.worfs<=0){
         alert("羊胜利！")
     }
+
 }
 // 判断这步棋是否合法，如果合法，则执行这步棋
 Board.prototype.addMove = function(mv) {
@@ -192,6 +193,7 @@ Board.prototype.flushBoard = function() {
             this.drawSquare(sq);
         }
     }
+
 }
 
 

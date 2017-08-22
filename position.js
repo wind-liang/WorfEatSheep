@@ -315,20 +315,20 @@ Position.prototype.legalMoveJump = function(src,dst) {
     }
 }
 Position.prototype.worfLive = function() {
-    if(this.worfGetLife()){
-        this.worfs++
-    }
+    // if(this.worfGetLife()){
+    //     this.worfs++
+    // }
     if(this.isWalk()){
         this.worfs--;
     }
 }
-Position.prototype.worfGetLife = function() {
-    if(this.diedWorf!=0 && this.squares[this.diedWorf]==1){
-        this.diedWorf=0;
-        return true;
-    }
-
-}
+// Position.prototype.worfGetLife = function() {
+//     if(this.diedWorf!=0 && this.squares[this.diedWorf]!=1){
+//         this.diedWorf=0;
+//         return true;
+//     }
+//
+// }
 Position.prototype.isWalkDetection = function() {
     for (var i = 0; i < arguments.length; i++) {
         if(!(this.squares[arguments[i]]==2||this.squares[arguments[i]]==1)){
@@ -337,19 +337,358 @@ Position.prototype.isWalkDetection = function() {
     }
     return true;
 }
+Position.prototype.diedWorfIsLive=function (sq) {
+    switch (sq){
+        case 2:
+            if(this.isWalkDetection(6,7,8,12)) {
+                this.diedWorf = sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+
+            break;
+        case 6:
+            if(this.isWalkDetection(2,7,8,12,18)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        case 7:
+            if(this.isWalkDetection(2,6,8,12,17)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        case 8:
+            if(this.isWalkDetection(2,6,7,12,16)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        case 10:
+            if(this.isWalkDetection(11,12,15,20,16,22)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        case 11:
+            if(this.isWalkDetection(10,16,21,12,13)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        case 12:
+            if(this.isWalkDetection(11,7,13,17,10,22,14,2,16,18,20,24)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        case 13:
+            if(this.isWalkDetection(11,18,14,12,23)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        case 14:
+            if(this.isWalkDetection(13,18,19,12,22,24)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break
+        case 15:
+            if(this.isWalkDetection(10,16,20,17)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        case 16:
+            if(this.isWalkDetection(10,11,12,17,22,21,20,15,8,18,28,26)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        case 17:
+            if(this.isWalkDetection(12,18,22,16,7,19,27,15)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        case 18:
+            if(this.isWalkDetection(12,13,14,19,24,23,22,17,6,28,26,16)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        case 19:
+            if(this.isWalkDetection(14,18,24,29,17)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break
+        case 20:
+            if(this.isWalkDetection(15,16,21,26,25,10,30,32,22,12)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        case 21:
+            if(this.isWalkDetection(16,20,26,22,23,11,31)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        case 22:
+            if(this.isWalkDetection(16,17,18,23,28,27,26,21,10,12,14,24,34,32,30,20)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        case 23:
+            if(this.isWalkDetection(18,22,28,24,13,21,33)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        case 24:
+            if(this.isWalkDetection(19,18,23,28,29,22,12,14,34,32)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        case 25:
+            if(this.isWalkDetection(20,30,26,27)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        case 26:
+            if(this.isWalkDetection(20,21,22,27,32,31,30,25,16,28,18,38)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break
+        case 27:
+            if(this.isWalkDetection(22,26,28,32,17,25,37,29)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        case 28:
+            if(this.isWalkDetection(24,29,34,33,32,27,22,23,18,16,26,36)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        case 29:
+            if(this.isWalkDetection(24,28,34,27,19)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        case 30:
+            if(this.isWalkDetection(25,26,31,20,22,32)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        case 31:
+            if(this.isWalkDetection(26,30,32,33,21)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        case 32:
+            if(this.isWalkDetection(36,37,38,42,27,26,28,20,22,24,30,31,33,34)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        case 33:
+            if(this.isWalkDetection(32,34,28,31,23)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        case 34:
+            if(this.isWalkDetection(33,29,28,22,24,32)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        case 36:
+            if(this.isWalkDetection(32,37,42,38,28)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        case 37:
+            if(this.isWalkDetection(36,38,42,32,27)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        case 38:
+            if(this.isWalkDetection(36,37,42,32,26)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        case 42:
+            if(this.isWalkDetection(32,36,37,38)){
+                this.diedWorf=sq;
+                return true;
+            }
+            if(this.diedWorf!=0){
+                this.diedWorf=0;
+                this.worfs++;
+            }
+            break;
+        default:
+            return false;
+    }
+}
 Position.prototype.isWalk = function() {
     for (var sq = 0; sq < 45; sq ++) {
         if(this.squares[sq]==1){
             if(sq==this.diedWorf){
+                this.diedWorfIsLive(sq)
                 continue;
             }
             switch (sq){
                 case 2:
-                   if(this.isWalkDetection(6,7,8,12)){
-                       this.diedWorf=sq;
-                       return true;
-                   }
-                   break;
+                    if(this.isWalkDetection(6,7,8,12)) {
+                        this.diedWorf = sq;
+                        return true;
+                    }
+
+                    break;
                 case 6:
                     if(this.isWalkDetection(2,7,8,12,18)){
                         this.diedWorf=sq;
@@ -397,6 +736,7 @@ Position.prototype.isWalk = function() {
                         this.diedWorf=sq;
                         return true;
                     }
+                    break;
                 case 15:
                     if(this.isWalkDetection(10,16,20,17)){
                         this.diedWorf=sq;
@@ -426,6 +766,7 @@ Position.prototype.isWalk = function() {
                         this.diedWorf=sq;
                         return true;
                     }
+                    break;
                 case 20:
                     if(this.isWalkDetection(15,16,21,26,25,10,30,32,22,12)){
                         this.diedWorf=sq;
