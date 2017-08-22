@@ -85,7 +85,7 @@ function Position() {
 Position.prototype.clearBoard = function() {
     this.sdPlayer = 1;	// 该谁走棋。1-狼；2-羊
     this.squares = [];	// 这个就是一维棋局数组
-    this.sheeps=22;
+    this.sheeps=14;
     this.liveSheeps=8;
     this.worfs=2;
     this.diedWorf=0;
@@ -143,10 +143,10 @@ Position.prototype.fromFen = function(fen) {
 }
 
 // 走一步棋
-Position.prototype.makeMove = function(mv) {
-    this.movePiece(mv);
-    return true;
-}
+// Position.prototype.makeMove = function(mv) {
+//     this.movePiece(mv);
+//     return true;
+// }
 
 // 根据走法移动棋子，删除终点位置的棋子，并将起点位置的棋子放置在终点的位置。
 Position.prototype.movePiece = function(mv) {
