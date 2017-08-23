@@ -1,3 +1,14 @@
 .help{
     font-size: 20px;
+
+
+}
+.title  {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+p{
+    padding: 0;
+    margin: 30px;
 }
