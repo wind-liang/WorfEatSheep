@@ -1,45 +1,43 @@
 .help{
-    font-size: 39px;
+    font-size: 36px;
 }
 .title  {
-    font-size: 70px;
-    color: 	#292421;
+    font-size: 67px;
+    /*color: 	#292421;*/
 }
 body {
-    background-color: #e4cf8e;
+    background-color: #c5bfad;
     width: 100%;
     height: 100%;
     object-fit:cover;
 }
 p{
+    font-weight:100;
+    color:#ffffff;
     padding: 0;
-    margin: 30px;
+    margin: 40px;
 }
 h1 {
     font-size: 80px;
+    color:#ffffff;
+    font-weight:300;
 }
+
 #return{
-    background-color:#F4A460; /* Green */
-    /*background: url(../images/sheep.gif);*/
-    /*position:absolute;*/
-    /*top: 10rem;*/
-    /*left: 3rem;*/
+    background-color:#c5bfad; /* Green */
     width:400px;
-    border: none;
-    color: #292421;
-    padding: 30px 20px;
+    border: #ffffff solid;
+    color: #ffffff;
+    padding: 25px 20px;
     text-align: center;
     text-decoration: none;
     /*display: inline-block;*/
     margin: auto;
     font-size: 70px;
-    border-radius: 20px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-
 #parent {
     width: 100%; /* 宽度值，随便啦 */
     height: 100%;  /* 高度值，随便啦 */
-    margin-top: 100px;
+    margin-top: 90px;
 }
 
