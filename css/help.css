@@ -2,7 +2,7 @@
     font-size: 36px;
 }
 .title  {
-    font-size: 67px;
+    font-size: 60px;
     /*color: 	#292421;*/
 }
 body {
@@ -38,6 +38,6 @@ h1 {
 #parent {
     width: 100%; /* 宽度值，随便啦 */
     height: 100%;  /* 高度值，随便啦 */
-    margin-top: 90px;
+    margin-top: 100px;
 }
 
