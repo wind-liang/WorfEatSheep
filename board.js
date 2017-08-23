@@ -46,9 +46,10 @@ function Board(container,sheepText,images) {
     style.background = "url(" + this.images + "board2.jpg)";
     this.container=container;
 }
-Board.prototype.startGame=function(){
+Board.prototype.startGame=function(sheeps,lesssheeps){
+    this.lesssheeps=lesssheeps;
     this.imgSquares = [];			// img数组，对应棋盘上的90个位置区域
-    this.pos = new Position();
+    this.pos = new Position(sheeps);
     this.sheepText.innerHTML="未下的羊："+this.pos.sheeps+"<br>请狼走";
     this.pos.fromFen("9/9/2w/1sss/1s3s/1sss/2w/9/9 r - - 0 1");	// 根据FEN串初始化棋局
     var style=this.style
@@ -136,7 +137,7 @@ Board.prototype.clickSquare = function(sq_) {
         this.sheepText.innerHTML="未下的羊："+this.pos.sheeps+"<br>请羊走";
     }
 
-    if(this.pos.liveSheeps<=12&&this.pos.sheeps==0){
+    if(this.pos.liveSheeps<=this.lesssheeps&&this.pos.sheeps==0){
         alert("狼胜利！")
     }
 

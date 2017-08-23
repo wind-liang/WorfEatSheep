@@ -77,8 +77,8 @@ function CHAR_TO_PIECE(c) {
     }
 }
 
-function Position() {
-    this.sheeps=15;
+function Position(sheeps) {
+    this.sheeps=sheeps-8;
     this.liveSheeps=8;
     this.worfs=2;
     this.diedWorf=0;
