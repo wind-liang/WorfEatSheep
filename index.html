@@ -1,33 +1,19 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, height=device-height">
-    <title>狼吃羊</title>
-    <script type="text/javascript">
-        var cssEl = document.createElement('style');
-        document.documentElement.firstElementChild.appendChild(cssEl);
-        function setPxPerRem(){
-            var dpr = 1;
-            //把viewport分成10份的rem，html标签的font-size设置为1rem的大小;
-            var pxPerRem = document.documentElement.clientWidth * dpr / 10;
-            cssEl.innerHTML = 'html{font-size:' + pxPerRem + 'px!important;}';
-        }
-        setPxPerRem();
-    </script>
-    <script type="text/javascript" src="board.js"></script>
-    <script type="text/javascript" src="position.js"></script>
-
+    <title>Title</title>
 </head>
 <body>
-
-<div style="text-align:center;white-space:nowrap">
-    <div id="container"></div>
-    <div id="sheepText" style="position: absolute; top: 49px; left: 20px;font-size:25px; color: sienna" align="left">欢迎来到狼吃羊 </div>
-</div>
-<script >
-    "use strict";
-    var board = new Board(container, sheepText,"images/");	// 创建棋盘
-    board.startGame()
+<canvas id="canvas" width="300" height="400"></canvas>
+<script type="text/javascript">
+    var canvas = document.getElementById("canvas");
+    var context2D = canvas.getContext("2d");
+    context2D.font ="35px Times New Roman";
+    context2D.fillText("HelloCanvas!", canvas.width / 2, canvas.height / 2);
+    var pic = new Image();
+    pic.src ="images/menu.png";
+    context2D.drawImage(pic,0, 0);
 </script>
 </body>
 </html>
