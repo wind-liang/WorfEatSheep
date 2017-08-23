@@ -1,0 +1,55 @@
+#container{
+    position: relative;
+    background: url(../images/menu.png);
+    width: 10rem;
+    height: 16rem ;
+    background-size:cover;
+}
+#gameWithoutNet{
+    background-color: #4CAF50; /* Green */
+    /*background: url(../images/sheep.gif);*/
+    position:absolute;
+    top: 5rem;
+    left: 3rem;
+    border: none;
+    color: white;
+    padding: 25px 55px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#gameWithNet{
+    background-color: #4CAF50; /* Green */
+    /*background: url(../images/sheep.gif);*/
+    position:absolute;
+    top: 7.5rem;
+    left: 3rem;
+    border: none;
+    color: white;
+    padding: 25px 55px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#gameHelp{
+    background-color: #4CAF50; /* Green */
+    /*background: url(../images/sheep.gif);*/
+    position:absolute;
+    top: 10rem;
+    left: 3rem;
+    border: none;
+    color: white;
+    padding: 25px 55px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}

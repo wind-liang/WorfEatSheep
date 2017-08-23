@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cec84410-2c2a-42d8-b407-a6ee83490d9a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/menu.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,17 +23,34 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="503">
-              <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+              <caret line="26" column="35" lean-forward="false" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/menu.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="111">
+              <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="worf.gif" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/worf.gif">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="nonet.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nonet.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="10" column="18" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="336">
+              <caret line="24" column="88" lean-forward="false" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="88" />
               <folding />
             </state>
           </provider>
@@ -58,8 +77,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -82,6 +101,7 @@
         <option value="$PROJECT_DIR$/position.js" />
         <option value="$PROJECT_DIR$/board.js" />
         <option value="$PROJECT_DIR$/menu.html" />
+        <option value="$PROJECT_DIR$/css/menu.css" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -159,6 +179,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WorfEatSheep" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WorfEatSheep" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -276,12 +310,12 @@
       <workItem from="1503218087750" duration="19876000" />
       <workItem from="1503297407954" duration="29758000" />
       <workItem from="1503414936792" duration="936000" />
-      <workItem from="1503457506259" duration="6273000" />
+      <workItem from="1503457506259" duration="8444000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75621000" />
+    <option name="totallyTimeSpent" value="77792000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -318,7 +352,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/images/rk.gif" />
     <entry file="file://$PROJECT_DIR$/images/rkm.gif" />
     <entry file="file://$PROJECT_DIR$/images/rp.gif" />
     <entry file="file://$PROJECT_DIR$/images/sheep.gif">
@@ -419,11 +452,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/worf.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css" />
     <entry file="file://$PROJECT_DIR$/images/bn.gif" />
     <entry file="file://$PROJECT_DIR$/images/rn.gif" />
@@ -498,14 +526,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nonet.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="10" column="18" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/board.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1036">
@@ -520,10 +540,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/nonet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="24" column="88" lean-forward="false" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/worf.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/menu.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="503">
-          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+          <caret line="26" column="35" lean-forward="false" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
           <folding />
         </state>
       </provider>

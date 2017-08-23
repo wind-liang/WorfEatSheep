@@ -13,18 +13,18 @@
         }
         setPxPerRem();
     </script>
-    <style>
-        #container{
-            position: relative;
-            background: url(images/menu.png);
-            width: 10rem;
-            height: 16rem ;
-            background-size:cover;
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
 
-        }
-    </style>
 </head>
 <body>
 <div id="container" ></div>
+<div id="gameWithoutNet">双人单机</div>
+<div id="gameWithNet">双人联机</div>
+<div id="gameHelp">规则说明</div>
 </body>
+<script>
+    document.getElementById("gameWithoutNet").onclick = function () {
+        location.href = "nonet.html"
+    };
+</script>
 </html>
