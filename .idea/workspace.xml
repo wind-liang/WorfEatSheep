@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cec84410-2c2a-42d8-b407-a6ee83490d9a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/board.js" afterPath="$PROJECT_DIR$/board.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nonet.html" afterPath="$PROJECT_DIR$/nonet.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/position.js" afterPath="$PROJECT_DIR$/position.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -39,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="position.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="position.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/position.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7345">
-              <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+            <state relative-caret-position="159">
+              <caret line="725" column="80" lean-forward="true" selection-start-line="725" selection-start-column="80" selection-end-line="725" selection-end-column="80" />
               <folding>
                 <element signature="e#262#436#0" expanded="false" />
                 <element signature="n#!!block;n#RANK_Y#0" expanded="false" />
@@ -57,7 +55,7 @@
                 <element signature="e#3372#3566#0" expanded="false" />
                 <element signature="e#3795#5332#0" expanded="false" />
                 <element signature="e#8402#17850#0" expanded="false" />
-                <element signature="e#25519#25835#0" expanded="false" />
+                <element signature="e#25523#25839#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -92,7 +90,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="board.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="board.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/board.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
@@ -136,9 +134,9 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/menu.css" />
         <option value="$PROJECT_DIR$/css/nonet.css" />
-        <option value="$PROJECT_DIR$/position.js" />
         <option value="$PROJECT_DIR$/nonet.html" />
         <option value="$PROJECT_DIR$/board.js" />
+        <option value="$PROJECT_DIR$/position.js" />
       </list>
     </option>
   </component>
@@ -346,12 +344,12 @@
       <workItem from="1503218087750" duration="19876000" />
       <workItem from="1503297407954" duration="29758000" />
       <workItem from="1503414936792" duration="936000" />
-      <workItem from="1503457506259" duration="12514000" />
+      <workItem from="1503457506259" duration="13067000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81862000" />
+    <option name="totallyTimeSpent" value="82415000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -417,7 +415,7 @@
             <element signature="e#3372#3566#0" expanded="false" />
             <element signature="e#3795#5332#0" expanded="false" />
             <element signature="e#8402#17850#0" expanded="false" />
-            <element signature="e#25519#25835#0" expanded="false" />
+            <element signature="e#25523#25839#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -466,7 +464,7 @@
             <element signature="e#3372#3566#0" expanded="false" />
             <element signature="e#3795#5332#0" expanded="false" />
             <element signature="e#8402#17850#0" expanded="false" />
-            <element signature="e#25519#25835#0" expanded="false" />
+            <element signature="e#25523#25839#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -561,28 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/position.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7345">
-          <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-          <folding>
-            <element signature="e#262#436#0" expanded="false" />
-            <element signature="n#!!block;n#RANK_Y#0" expanded="false" />
-            <element signature="n#!!block;n#FILE_X#0" expanded="false" />
-            <element signature="n#!!block;n#COORD_XY#0" expanded="false" />
-            <element signature="n#!!block;n#CHR#0" expanded="false" />
-            <element signature="n#!!block;n#DST#0" expanded="false" />
-            <element signature="n#!!block;n#MOVE#0" expanded="false" />
-            <element signature="n#!!block;n#CHAR_TO_PIECE#0" expanded="false" />
-            <element signature="e#2798#3328#0" expanded="false" />
-            <element signature="e#3372#3566#0" expanded="false" />
-            <element signature="e#3795#5332#0" expanded="false" />
-            <element signature="e#8402#17850#0" expanded="false" />
-            <element signature="e#25519#25835#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nonet.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="503">
@@ -601,6 +577,28 @@
             <element signature="e#4276#4510#0" expanded="false" />
             <element signature="e#4550#4733#0" expanded="false" />
             <element signature="e#4772#4800#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/position.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="725" column="80" lean-forward="true" selection-start-line="725" selection-start-column="80" selection-end-line="725" selection-end-column="80" />
+          <folding>
+            <element signature="e#262#436#0" expanded="false" />
+            <element signature="n#!!block;n#RANK_Y#0" expanded="false" />
+            <element signature="n#!!block;n#FILE_X#0" expanded="false" />
+            <element signature="n#!!block;n#COORD_XY#0" expanded="false" />
+            <element signature="n#!!block;n#CHR#0" expanded="false" />
+            <element signature="n#!!block;n#DST#0" expanded="false" />
+            <element signature="n#!!block;n#MOVE#0" expanded="false" />
+            <element signature="n#!!block;n#CHAR_TO_PIECE#0" expanded="false" />
+            <element signature="e#2798#3328#0" expanded="false" />
+            <element signature="e#3372#3566#0" expanded="false" />
+            <element signature="e#3795#5332#0" expanded="false" />
+            <element signature="e#8402#17850#0" expanded="false" />
+            <element signature="e#25523#25839#0" expanded="false" />
           </folding>
         </state>
       </provider>

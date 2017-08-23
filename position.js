@@ -723,7 +723,7 @@ Position.prototype.isWalk = function() {
                     }
                     break;
                 case 12:
-                    if(this.isWalkDetection(11,7,13,17,10,22,14,2,16,18,20,24)){
+                    if(this.isWalkDetection(11,7,13,17,10,22,14,2,16,18,20,24,6,8)){
                         this.diedWorf=sq;
                         return true;
                     }
