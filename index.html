@@ -14,12 +14,6 @@
         }
         setPxPerRem();
     </script>
-    <style>
-        /*#container {*/
-            /*width: 100%;*/
-            /*height: 100%;*/
-        /*}*/
-    </style>
     <script type="text/javascript" src="board.js"></script>
     <script type="text/javascript" src="position.js"></script>
 
@@ -27,13 +21,13 @@
 <body>
 
 <div style="text-align:center;white-space:nowrap">
-        <div id="container"></div>
+    <div id="container"></div>
     <div id="sheepText" style="position: absolute; top: 49px; left: 20px;font-size:25px; color: sienna" align="left">欢迎来到狼吃羊 </div>
 </div>
 <script >
-"use strict";
-var board = new Board(container, sheepText,"images/");	// 创建棋盘
-board.startGame()
+    "use strict";
+    var board = new Board(container, sheepText,"images/");	// 创建棋盘
+    board.startGame()
 </script>
 </body>
 </html>
