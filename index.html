@@ -1,19 +1,17 @@
-<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        #container{
+            position: relative;
+            background: url(images/menu.png);
+            width: 360px;
+            height: 480px;
+        }
+    </style>
 </head>
 <body>
-<canvas id="canvas" width="300" height="400"></canvas>
-<script type="text/javascript">
-    var canvas = document.getElementById("canvas");
-    var context2D = canvas.getContext("2d");
-    context2D.font ="35px Times New Roman";
-    context2D.fillText("HelloCanvas!", canvas.width / 2, canvas.height / 2);
-    var pic = new Image();
-    pic.src ="images/menu.png";
-    context2D.drawImage(pic,0, 0);
-</script>
+<div id="container" ></div>
 </body>
 </html>
