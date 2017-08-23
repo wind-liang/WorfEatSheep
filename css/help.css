@@ -1,8 +1,8 @@
 .help{
-    font-size: 36px;
+    font-size: 38px;
 }
 .title  {
-    font-size: 60px;
+    font-size: 55px;
     /*color: 	#292421;*/
 }
 body {
@@ -25,15 +25,15 @@ h1 {
 
 #return{
     background-color:#c5bfad; /* Green */
-    width:400px;
+    width:300px;
     border: #ffffff solid;
     color: #ffffff;
-    padding: 25px 20px;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
     /*display: inline-block;*/
     margin: auto;
-    font-size: 70px;
+    font-size: 55px;
 }
 #parent {
     width: 100%; /* 宽度值，随便啦 */
