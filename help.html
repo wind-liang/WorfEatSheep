@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>帮助</title>
+    <script type="text/javascript">
+        var cssEl = document.createElement('style');
+        document.documentElement.firstElementChild.appendChild(cssEl);
+        function setPxPerRem(){
+            var dpr = 1;
+            //把viewport分成10份的rem，html标签的font-size设置为1rem的大小;
+            var pxPerRem = document.documentElement.clientWidth * dpr / 10;
+            cssEl.innerHTML = 'html{font-size:' + pxPerRem + 'px!important;}';
+        }
+        setPxPerRem();
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/help.css">
+</head>
+<body>
+<h3>狼走法</h3>
+<span class="help">一共两只狼，可以沿着直线或斜线走，一步走一个距离，沿着直线跳过羊，即可把羊吃了</span>
+<h3>羊走法</h3>
+<span class="help">一共 23 （或者自己设定）只羊，开局提前放 8 只。之后每步将羊放在空余位置。放完所有的羊后，可沿直线或斜线走一个距离</span>
+<h3>输赢判别</h3>
+<span class="help">羊剩余 12（或自己设定）只 即判羊输。<br>狼不能走动，即判羊赢</span>
+</body>
+</html>
