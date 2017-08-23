@@ -6,21 +6,29 @@
     <link rel="stylesheet" type="text/css" href="css/help.css">
 </head>
 <body>
-<p><span class="title">狼走法</span>
+<h1><center>游戏规则</center></h1>
+<p><span class="title"> 狼走法 </span>
     <br/>
-    <span class="help">一共两只狼，可以沿着直线或斜线走，一步走一个距离，沿着直线跳过羊，即可把羊吃了,但只能跳到被吃的羊的下一个距离</span></p>
+    <span class="help">一共两只狼，可以沿着直线或斜线走，一步走一个距离，沿着直线跳过羊，即可把羊吃了，但只能跳到被吃的羊的下一个距离</span></p>
 
-<p><span class="title">羊走法</span>
+<p><span class="title"> 羊走法 </span>
     <br/>
-    <span class="help">一共 23 （或者自己设定）只羊，开局提前放 8 只。之后每步将羊放在空余位置。放完所有的羊后，可沿直线或斜线走一个距离</span>
+    <span class="help">一共 23（或者自己设定）只羊，开局提前放 8 只。之后每步将羊放在空余位置。放完所有的羊后，可移动其中一只羊沿直线或斜线走一个距离</span>
 </p>
 <p>
-    <span class="title">输赢判别</span>
+    <span class="title"> 输赢判别 </span>
     <br/>
-    <span class="help">狼先走，之后交替进行。羊剩余 12（或自己设定）只,即判羊输。 狼不能走动，即判羊赢</span>
+    <span class="help">狼先走，之后交替进行。羊剩余 12（或自己设定）只,即判羊输。 狼不能走动，即判狼输</span>
 </p>
 
-
+<div id="parent">
+    <div  id="return">返回主菜单</div>
+</div>
 
 </body>
+<script>
+    document.getElementById("return").onclick = function () {
+        location.href = "index.html"
+    };
+</script>
 </html>
