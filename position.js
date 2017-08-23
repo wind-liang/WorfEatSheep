@@ -89,7 +89,6 @@ function Position(sheeps) {
 Position.prototype.clearBoard = function() {
     this.sdPlayer = 1;	// 该谁走棋。1-狼；2-羊
     this.squares = [];	// 这个就是一维棋局数组
-
     for (var sq = 0; sq < 45; sq ++) {
         this.squares.push(0);
     }

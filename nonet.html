@@ -30,8 +30,15 @@
 <script >
     "use strict";
     var board = new Board(container, sheepText,"images/");	// 创建棋盘
+    var start=false
     document.getElementById("startGame").onclick = function () {
-        board.startGame(23)
+        startGame.innerText="重新开始"
+        if(start){
+
+            board.endGame()
+        }
+        board.startGame(23,12)
+        start=true
     };
     document.getElementById("setting").onclick = function () {
         //弹出一个输入框，输入一段文字，可以提交

@@ -46,6 +46,14 @@ function Board(container,sheepText,images) {
     style.background = "url(" + this.images + "board2.jpg)";
     this.container=container;
 }
+Board.prototype.endGame=function(){
+    for (var sq = 0; sq < 45; sq ++) {
+        if (IN_BOARD(sq)) {
+            var img = this.imgSquares[sq];
+            img.src = this.images +  "oo.gif";
+        }
+    }
+}
 Board.prototype.startGame=function(sheeps,lesssheeps){
     this.lesssheeps=lesssheeps;
     this.imgSquares = [];			// img数组，对应棋盘上的90个位置区域
