@@ -43,18 +43,19 @@
     }
     function prom()
     {
-        sheeps=parseInt(prompt("请输入初始羊的数目:",""));//将输入的内容赋给变量 name ，
+        var s=parseInt(prompt("请输入初始羊的数目:",""));//将输入的内容赋给变量 name ，
         //这里需要注意的是，prompt有两个参数，前面是提示的话，后面是当对话框出来后，
-        if(isNaN(sheeps)){
+        if(isNaN(s)){
             alert("请输入合法数字")
             return
         }
-        if(sheeps<8){
+        if(s<8){
             alert("请输入最少8只羊")
             return
         }
-        if(sheeps)//如果返回的有内容
+        if(s)//如果返回的有内容
         {
+            sheeps=s
            startGameA()
         }
     }
