@@ -58,9 +58,14 @@ Board.prototype.startGame=function(sheeps,lesssheeps,me,him){
     this.him=him
     this.me=me
     var t=this;
+    var previous=0;
     me.on('getStep', function (data) {
         var sq=data.step;
-        t.clickSquare(sq);
+        if(sq!=previous){
+            t.clickSquare(sq);
+            previous=sq;
+        }
+
     });
     this.lesssheeps=lesssheeps;
     this.imgSquares = [];			// img数组，对应棋盘上的90个位置区域
