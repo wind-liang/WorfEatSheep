@@ -26,8 +26,8 @@
     <div id="container"></div>
     <div id="sheepText" style="position: absolute; top: 49px; left: 20px;font-size:25px; color: sienna" align="left">欢迎来到狼吃羊 </div>
 </div>
-<div id="startGame">创建房间</div>
-<div id="setting">加入房间</div>
+<div id="new">创建房间</div>
+<div id="join">加入房间</div>
 <script >
     "use strict";
     var board = new Board(container, sheepText,"images/");	// 创建棋盘
@@ -39,7 +39,7 @@
         if(start){
             board.endGame()
         }
-        board.startGame(sheeps,lesshheeps)
+        board.startGame(sheeps,lesshheeps,me,him)
         start=true
     }
     function newRoom()
@@ -55,7 +55,7 @@
                 console.log(data);
                 partner=data.user_id;
                 socket.emit('giveHisId',{ user_name : name, user_id : partner})
-                startGameA(s,partner);
+                startGameA(socket,partner);
 
             });
             var name="windliang"
@@ -72,18 +72,17 @@
             var socket = io.connect('http://101.236.29.78:3000');
             socket.on('getOwnid', function (data) {
                 console.log(data);
-                var me=data.user_id;
-                startGameA(me,s)
+                startGameA(socket,s)
 
             });
             var name="windliang2"
             socket.emit('joinRoom',{ user_name : name, user_id : s})
         }
     }
-    document.getElementById("startGame").onclick = function () {
+    document.getElementById("new").onclick = function () {
         newRoom()
     };
-    document.getElementById("setting").onclick = function () {
+    document.getElementById("join").onclick = function () {
         joinRoom()
     };
 

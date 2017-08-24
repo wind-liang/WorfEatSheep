@@ -54,7 +54,13 @@ Board.prototype.endGame=function(){
         }
     }
 }
-Board.prototype.startGame=function(sheeps,lesssheeps){
+Board.prototype.startGame=function(sheeps,lesssheeps,me,him){
+    this.him=him
+    this.me=me
+    me.on('getStep', function (data) {
+        var sq=data.sq;
+        this.clickSquare(sq);
+    });
     this.lesssheeps=lesssheeps;
     this.imgSquares = [];			// img数组，对应棋盘上的90个位置区域
     this.pos = new Position(sheeps);
@@ -97,9 +103,12 @@ Board.prototype.startGame=function(sheeps,lesssheeps){
     // 显示棋子图片
     this.flushBoard();
 }
+
+
 // 点击棋盘的响应函数。点击棋盘（棋子或者空位置），就会调用该函数。sq_是点击的位置
 Board.prototype.clickSquare = function(sq_) {
     var sq = sq_;						// 点击的位置
+    this.me.emit('setStep',{ step : sq, user_id : this.him})
     var pc = this.pos.squares[sq];	// 点击的棋子
 
     if(pc==0&&this.sqSelected==0&&this.pos.sdPlayer==2){
