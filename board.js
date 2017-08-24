@@ -59,7 +59,7 @@ Board.prototype.startGame=function(sheeps,lesssheeps,me,him){
     this.me=me
     var t=this;
     me.on('getStep', function (data) {
-        var sq=data.sq;
+        var sq=data.step;
         t.clickSquare(sq);
     });
     this.lesssheeps=lesssheeps;
@@ -112,7 +112,7 @@ Board.prototype.clickSquare = function(sq_) {
     if(!isNaN(sq)){
         this.me.emit('setStep',{ step : sq, user_id : this.him})
     }
-    
+
     var pc = this.pos.squares[sq];	// 点击的棋子
 
     if(pc==0&&this.sqSelected==0&&this.pos.sdPlayer==2){
