@@ -107,10 +107,17 @@ Board.prototype.startGame=function(sheeps,lesssheeps,me,him){
 
 
 // 点击棋盘的响应函数。点击棋盘（棋子或者空位置），就会调用该函数。sq_是点击的位置
+var previous=0;
 Board.prototype.clickSquare = function(sq_) {
+
     var sq = sq_;						// 点击的位置
+
     if(!isNaN(sq)){
-        this.me.emit('setStep',{ step : sq, user_id : this.him})
+        if(previous!=sq){
+            this.me.emit('setStep',{ step : sq, user_id : this.him})
+            previous=sq;
+        }
+
     }
 
     var pc = this.pos.squares[sq];	// 点击的棋子
