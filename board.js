@@ -59,7 +59,7 @@ Board.prototype.startGame=function(sheeps,lesssheeps,me,him){
     this.me=me
     me.on('getStep', function (data) {
         var sq=data.sq;
-        this.clickSquare(sq);
+        this.clickNet(sq);
     });
     this.lesssheeps=lesssheeps;
     this.imgSquares = [];			// img数组，对应棋盘上的90个位置区域
@@ -104,9 +104,7 @@ Board.prototype.startGame=function(sheeps,lesssheeps,me,him){
     this.flushBoard();
 }
 
-
-// 点击棋盘的响应函数。点击棋盘（棋子或者空位置），就会调用该函数。sq_是点击的位置
-Board.prototype.clickSquare = function(sq_) {
+Board.prototype.clickNet = function(sq_){
     var sq = sq_;						// 点击的位置
     this.me.emit('setStep',{ step : sq, user_id : this.him})
     var pc = this.pos.squares[sq];	// 点击的棋子
@@ -158,6 +156,10 @@ Board.prototype.clickSquare = function(sq_) {
         alert("狼胜利！")
     }
 
+}
+// 点击棋盘的响应函数。点击棋盘（棋子或者空位置），就会调用该函数。sq_是点击的位置
+Board.prototype.clickSquare = function(sq_) {
+    this.clickNet(sq_)
 
 }
 // 判断这步棋是否合法，如果合法，则执行这步棋
