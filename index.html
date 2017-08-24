@@ -21,9 +21,9 @@
 <div id="gameWithoutNet">双人单机</div>
 <div id="gameWithNet">双人联机</div>
 <div  id="gameHelp">规则说明</div>
+<footer>如果你在 QQ 或 微信中打开，为保证正常体验，请点击右上角用其他浏览器中打开</footer>
 </body>
 <script>
-
     document.getElementById("gameWithoutNet").onclick = function () {
         location.href = "nonet.html"
     };
@@ -33,5 +33,14 @@
     document.getElementById("gameHelp").onclick = function () {
         location.href = "help.html"
     };
+
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?ea71b19426afbce34c77b6c8c0318a78";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+
 </script>
 </html>
