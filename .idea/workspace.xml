@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cec84410-2c2a-42d8-b407-a6ee83490d9a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/board.js" afterPath="$PROJECT_DIR$/board.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/withnet.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/withnet.html" afterPath="$PROJECT_DIR$/withnet.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -50,20 +50,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="withnet.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="withnet.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/withnet.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="56" column="70" lean-forward="true" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="79" />
+            <state relative-caret-position="224">
+              <caret line="8" column="70" lean-forward="true" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="board.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="withnet.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/withnet.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-681">
+              <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="board.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/board.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
+            <state relative-caret-position="829">
               <caret line="116" column="24" lean-forward="true" selection-start-line="116" selection-start-column="24" selection-end-line="116" selection-end-column="24" />
               <folding>
                 <element signature="e#4479#4713#0" expanded="false" />
@@ -77,8 +87,8 @@
       <file leaf-file-name="nonet.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/nonet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+            <state relative-caret-position="495">
+              <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -149,8 +159,9 @@
         <option value="$PROJECT_DIR$/newroom.html" />
         <option value="$PROJECT_DIR$/socket.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/withnet.html" />
         <option value="$PROJECT_DIR$/board.js" />
+        <option value="$PROJECT_DIR$/css/withnet.css" />
+        <option value="$PROJECT_DIR$/withnet.html" />
       </list>
     </option>
   </component>
@@ -349,12 +360,12 @@
       <workItem from="1503297407954" duration="29758000" />
       <workItem from="1503414936792" duration="936000" />
       <workItem from="1503457506259" duration="28788000" />
-      <workItem from="1503548543728" duration="11629000" />
+      <workItem from="1503548543728" duration="11897000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109765000" />
+    <option name="totallyTimeSpent" value="110033000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -391,18 +402,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/board.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1288">
-          <caret line="46" column="31" lean-forward="false" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
-          <folding>
-            <element signature="e#4479#4713#0" expanded="false" />
-            <element signature="e#4753#4936#0" expanded="false" />
-            <element signature="e#4975#5003#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/position.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="924">
@@ -492,14 +491,6 @@
     <entry file="file://$PROJECT_DIR$/images/oo.gif">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/nonet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/help.html">
@@ -622,23 +613,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/withnet.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="56" column="70" lean-forward="true" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/board.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
+        <state relative-caret-position="829">
           <caret line="116" column="24" lean-forward="true" selection-start-line="116" selection-start-column="24" selection-end-line="116" selection-end-column="24" />
           <folding>
             <element signature="e#4479#4713#0" expanded="false" />
             <element signature="e#4753#4936#0" expanded="false" />
             <element signature="e#4975#5003#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/nonet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/withnet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-681">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/withnet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="70" lean-forward="true" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
+          <folding />
         </state>
       </provider>
     </entry>
