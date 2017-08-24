@@ -72,13 +72,13 @@
       <file leaf-file-name="board.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/board.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="62" column="26" lean-forward="false" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+            <state relative-caret-position="191">
+              <caret line="114" column="4" lean-forward="true" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
               <folding>
                 <element signature="e#2131#2853#0" expanded="false" />
-                <element signature="e#4492#4726#0" expanded="false" />
-                <element signature="e#4766#4949#0" expanded="false" />
-                <element signature="e#4988#5016#0" expanded="false" />
+                <element signature="e#4527#4761#0" expanded="false" />
+                <element signature="e#4801#4984#0" expanded="false" />
+                <element signature="e#5023#5051#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -360,12 +360,12 @@
       <workItem from="1503297407954" duration="29758000" />
       <workItem from="1503414936792" duration="936000" />
       <workItem from="1503457506259" duration="28788000" />
-      <workItem from="1503548543728" duration="13273000" />
+      <workItem from="1503548543728" duration="13431000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111409000" />
+    <option name="totallyTimeSpent" value="111567000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -639,13 +639,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/board.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="62" column="26" lean-forward="false" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+        <state relative-caret-position="191">
+          <caret line="114" column="4" lean-forward="true" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
           <folding>
             <element signature="e#2131#2853#0" expanded="false" />
-            <element signature="e#4492#4726#0" expanded="false" />
-            <element signature="e#4766#4949#0" expanded="false" />
-            <element signature="e#4988#5016#0" expanded="false" />
+            <element signature="e#4527#4761#0" expanded="false" />
+            <element signature="e#4801#4984#0" expanded="false" />
+            <element signature="e#5023#5051#0" expanded="false" />
           </folding>
         </state>
       </provider>
