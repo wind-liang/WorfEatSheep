@@ -60,7 +60,6 @@
             });
             var name="windliang"
             socket.emit('newRoom',{ user_name : name, user_id : s})
-            startGameA()
         }
     }
     function joinRoom()
@@ -79,7 +78,6 @@
             });
             var name="windliang2"
             socket.emit('joinRoom',{ user_name : name, user_id : s})
-
         }
     }
     document.getElementById("startGame").onclick = function () {
