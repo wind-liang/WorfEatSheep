@@ -30,20 +30,43 @@
 <script >
     "use strict";
     var board = new Board(container, sheepText,"images/");	// 创建棋盘
+    var sheeps=23
+    var lesshheeps=12
     var start=false
-
-    document.getElementById("startGame").onclick = function () {
+    function startGameA() {
         startGame.innerText="重新开始"
         if(start){
             board.endGame()
         }
-        board.startGame(23,12)
+        board.startGame(sheeps,lesshheeps)
         start=true
+    }
+    function prom()
+    {
+        sheeps=parseInt(prompt("请输入初始羊的数目:",""));//将输入的内容赋给变量 name ，
+        //这里需要注意的是，prompt有两个参数，前面是提示的话，后面是当对话框出来后，
+        if(isNaN(sheeps)){
+            alert("请输入合法数字")
+            return
+        }
+        if(sheeps<8){
+            alert("请输入最少8只羊")
+            return
+        }
+        if(sheeps)//如果返回的有内容
+        {
+           startGameA()
+        }
+    }
+
+    document.getElementById("startGame").onclick = function () {
+        startGameA()
     };
     document.getElementById("setting").onclick = function () {
         //弹出一个输入框，输入一段文字，可以提交
-         alert("还没做QAQ")
+         prom()
     };
+
 
 </script>
 </body>

@@ -25,7 +25,7 @@ h1 {
 
 #return{
     background-color:#c5bfad; /* Green */
-    width:300px;
+    width:340px;
     border: #ffffff solid;
     color: #ffffff;
     padding: 10px;
@@ -33,7 +33,7 @@ h1 {
     text-decoration: none;
     /*display: inline-block;*/
     margin: auto;
-    font-size: 55px;
+    font-size: 65px;
 }
 #parent {
     width: 100%; /* 宽度值，随便啦 */
