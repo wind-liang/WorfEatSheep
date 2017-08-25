@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'new';
+    src: url('../方正喵呜体.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 #container{
     position: relative;
     background: url(../images/menu.png);
@@ -7,7 +13,7 @@
 }
 #gameWithoutNet{
     /*background: url(../images/sheep.gif);*/
-    font-family: ;
+    font-family:new;
     position:absolute;
     top: 5.9rem;
     left: 3rem;
@@ -21,6 +27,7 @@
 }
 #gameWithNet{
     /*background: url(../images/sheep.gif);*/
+    font-family:new;
     position:absolute;
     top: 8.4rem;
     left: 3rem;
@@ -34,6 +41,7 @@
 }
 #gameHelp{
     /*background: url(../images/sheep.gif);*/
+    font-family:new;
     position:absolute;
     top: 10.9rem;
     left: 3rem;
