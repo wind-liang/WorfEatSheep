@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cec84410-2c2a-42d8-b407-a6ee83490d9a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/boardnet.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/board.js" afterPath="$PROJECT_DIR$/board.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/withnet.html" afterPath="$PROJECT_DIR$/withnet.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,33 +23,61 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
+            <state relative-caret-position="28">
               <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="withnet.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nonet.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nonet.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="31" column="24" lean-forward="false" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="withnet.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/withnet.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="112" column="26" lean-forward="false" selection-start-line="112" selection-start-column="26" selection-end-line="112" selection-end-column="26" />
+            <state relative-caret-position="560">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="board.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="board.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/board.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2688">
-              <caret line="122" column="24" lean-forward="false" selection-start-line="122" selection-start-column="24" selection-end-line="122" selection-end-column="24" />
+            <state relative-caret-position="271">
+              <caret line="57" column="1" lean-forward="false" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
               <folding>
-                <element signature="e#2219#2941#0" expanded="false" />
-                <element signature="e#4695#4929#0" expanded="false" />
-                <element signature="e#4969#5152#0" expanded="false" />
-                <element signature="e#5191#5219#0" expanded="false" />
+                <element signature="e#1980#2702#0" expanded="false" />
+                <element signature="e#4238#4472#0" expanded="false" />
+                <element signature="e#4512#4695#0" expanded="false" />
+                <element signature="e#4734#4762#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="boardnet.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boardnet.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="591">
+              <caret line="257" column="0" lean-forward="false" selection-start-line="257" selection-start-column="0" selection-end-line="257" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#41#0" expanded="false" />
+                <element signature="e#2261#2983#0" expanded="false" />
+                <element signature="e#4737#4971#0" expanded="false" />
+                <element signature="e#5011#5194#0" expanded="false" />
+                <element signature="e#5233#5261#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -87,9 +118,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -127,9 +158,11 @@
         <option value="$PROJECT_DIR$/newroom.html" />
         <option value="$PROJECT_DIR$/socket.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/board.js" />
         <option value="$PROJECT_DIR$/css/withnet.css" />
+        <option value="$PROJECT_DIR$/images/boardnet.js" />
+        <option value="$PROJECT_DIR$/boardnet.js" />
         <option value="$PROJECT_DIR$/withnet.html" />
+        <option value="$PROJECT_DIR$/board.js" />
       </list>
     </option>
   </component>
@@ -206,6 +239,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WorfEatSheep" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WorfEatSheep" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -225,10 +272,10 @@
     <property name="nodejs_interpreter_path" value="F:/node.js/node" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\WEB\WorfEatSheep" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\WEB\WorfEatSheep" />
     </key>
   </component>
@@ -329,12 +376,12 @@
       <workItem from="1503414936792" duration="936000" />
       <workItem from="1503457506259" duration="28788000" />
       <workItem from="1503548543728" duration="17482000" />
-      <workItem from="1503626198324" duration="8307000" />
+      <workItem from="1503626198324" duration="10050000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123925000" />
+    <option name="totallyTimeSpent" value="125668000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -371,28 +418,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/position.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-          <folding>
-            <element signature="e#262#436#0" expanded="false" />
-            <element signature="n#!!block;n#RANK_Y#0" expanded="false" />
-            <element signature="n#!!block;n#FILE_X#0" expanded="false" />
-            <element signature="n#!!block;n#COORD_XY#0" expanded="false" />
-            <element signature="n#!!block;n#CHR#0" expanded="false" />
-            <element signature="n#!!block;n#DST#0" expanded="false" />
-            <element signature="n#!!block;n#MOVE#0" expanded="false" />
-            <element signature="n#!!block;n#CHAR_TO_PIECE#0" expanded="false" />
-            <element signature="e#2798#3328#0" expanded="false" />
-            <element signature="e#3372#3566#0" expanded="false" />
-            <element signature="e#3795#5332#0" expanded="false" />
-            <element signature="e#8402#17850#0" expanded="false" />
-            <element signature="e#25523#25839#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/checkboard.html" />
     <entry file="file://$PROJECT_DIR$/css/main.css" />
     <entry file="file://$PROJECT_DIR$/checkboard.html" />
@@ -509,13 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nonet.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/newroom.css" />
     <entry file="file://$PROJECT_DIR$/newroom.html" />
     <entry file="file://$PROJECT_DIR$/socket.js" />
@@ -543,32 +561,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/boardnet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/board.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2688">
-          <caret line="122" column="24" lean-forward="false" selection-start-line="122" selection-start-column="24" selection-end-line="122" selection-end-column="24" />
+        <state relative-caret-position="591">
+          <caret line="257" column="0" lean-forward="false" selection-start-line="257" selection-start-column="0" selection-end-line="257" selection-end-column="0" />
           <folding>
-            <element signature="e#2219#2941#0" expanded="false" />
-            <element signature="e#4695#4929#0" expanded="false" />
-            <element signature="e#4969#5152#0" expanded="false" />
-            <element signature="e#5191#5219#0" expanded="false" />
+            <element signature="e#0#41#0" expanded="false" />
+            <element signature="e#2261#2983#0" expanded="false" />
+            <element signature="e#4737#4971#0" expanded="false" />
+            <element signature="e#5011#5194#0" expanded="false" />
+            <element signature="e#5233#5261#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/withnet.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="112" column="26" lean-forward="false" selection-start-line="112" selection-start-column="26" selection-end-line="112" selection-end-column="26" />
+        <state relative-caret-position="560">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nonet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="31" column="24" lean-forward="false" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/board.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="57" column="1" lean-forward="false" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
+          <folding>
+            <element signature="e#1980#2702#0" expanded="false" />
+            <element signature="e#4238#4472#0" expanded="false" />
+            <element signature="e#4512#4695#0" expanded="false" />
+            <element signature="e#4734#4762#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

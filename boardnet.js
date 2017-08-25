@@ -1,3 +1,6 @@
+/**
+ * Created by liang on 2017/8/25.
+ */
 "use strict";
 var log = console.log.bind(console)
 var BOARD_WIDTH = 500;
@@ -54,8 +57,19 @@ Board.prototype.endGame=function(){
         }
     }
 }
-Board.prototype.startGame=function(sheeps,lesssheeps){
- 
+Board.prototype.startGame=function(sheeps,lesssheeps,me,him){
+    this.him=him
+    this.me=me
+    var t=this;
+    var previous=0;
+    me.on('getStep', function (data) {
+        var sq=data.step;
+        if(sq!=previous){
+            t.clickSquare(sq);
+            previous=sq;
+        }
+
+    });
     this.lesssheeps=lesssheeps;
     this.imgSquares = [];			// img数组，对应棋盘上的90个位置区域
     this.pos = new Position(sheeps);
@@ -100,10 +114,19 @@ Board.prototype.startGame=function(sheeps,lesssheeps){
 }
 
 
-
+// 点击棋盘的响应函数。点击棋盘（棋子或者空位置），就会调用该函数。sq_是点击的位置
+var previous=0;
 Board.prototype.clickSquare = function(sq_) {
 
     var sq = sq_;						// 点击的位置
+
+    if(!isNaN(sq)){
+        if(previous!=sq){
+            this.me.emit('setStep',{ step : sq, user_id : this.him})
+            previous=sq;
+        }
+
+    }
 
     var pc = this.pos.squares[sq];	// 点击的棋子
 
