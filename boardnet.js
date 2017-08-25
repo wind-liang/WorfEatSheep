@@ -60,6 +60,7 @@ Board.prototype.endGame=function(){
 Board.prototype.startGame=function(sheeps,lesssheeps,me,him){
     this.him=him
     this.me=me
+    this.end=false;
     var t=this;
     var previous=0;
     me.on('getStep', function (data) {
@@ -164,7 +165,18 @@ Board.prototype.clickSquare = function(sq_) {
     log(this.pos.liveSheeps);
     log(this.pos.worfs);
     if(this.pos.worfs<=0){
-        alert("羊胜利！")
+        if(!this.end){
+            alert("羊胜利！")
+            this.end=true
+        }
+
+    }
+    if(this.pos.liveSheeps<=this.lesssheeps&&this.pos.sheeps==0){
+        if(this.end){
+            alert("狼胜利！")
+            this.end=true
+        }
+
     }
     if(this.pos.sdPlayer==1){
         this.sheepText.innerHTML="未下的羊："+this.pos.sheeps+"<br>请狼走";
@@ -173,9 +185,7 @@ Board.prototype.clickSquare = function(sq_) {
         this.sheepText.innerHTML="未下的羊："+this.pos.sheeps+"<br>请羊走";
     }
 
-    if(this.pos.liveSheeps<=this.lesssheeps&&this.pos.sheeps==0){
-        alert("狼胜利！")
-    }
+
 
 
 }

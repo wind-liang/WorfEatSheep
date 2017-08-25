@@ -55,7 +55,7 @@ Board.prototype.endGame=function(){
     }
 }
 Board.prototype.startGame=function(sheeps,lesssheeps){
- 
+
     this.lesssheeps=lesssheeps;
     this.imgSquares = [];			// img数组，对应棋盘上的90个位置区域
     this.pos = new Position(sheeps);

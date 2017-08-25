@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cec84410-2c2a-42d8-b407-a6ee83490d9a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/boardnet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/board.js" afterPath="$PROJECT_DIR$/board.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/withnet.html" afterPath="$PROJECT_DIR$/withnet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/boardnet.js" afterPath="$PROJECT_DIR$/boardnet.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -45,39 +43,39 @@
       <file leaf-file-name="withnet.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/withnet.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="-449">
+              <caret line="112" column="26" lean-forward="true" selection-start-line="112" selection-start-column="26" selection-end-line="112" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="board.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="board.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/board.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="271">
-              <caret line="57" column="1" lean-forward="false" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
+              <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding>
-                <element signature="e#1980#2702#0" expanded="false" />
-                <element signature="e#4238#4472#0" expanded="false" />
-                <element signature="e#4512#4695#0" expanded="false" />
-                <element signature="e#4734#4762#0" expanded="false" />
+                <element signature="e#1979#2701#0" expanded="false" />
+                <element signature="e#4237#4471#0" expanded="false" />
+                <element signature="e#4511#4694#0" expanded="false" />
+                <element signature="e#4733#4761#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="boardnet.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="boardnet.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/boardnet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="591">
-              <caret line="257" column="0" lean-forward="false" selection-start-line="257" selection-start-column="0" selection-end-line="257" selection-end-column="0" />
+            <state relative-caret-position="535">
+              <caret line="176" column="25" lean-forward="false" selection-start-line="176" selection-start-column="25" selection-end-line="176" selection-end-column="25" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
-                <element signature="e#2261#2983#0" expanded="false" />
-                <element signature="e#4737#4971#0" expanded="false" />
-                <element signature="e#5011#5194#0" expanded="false" />
-                <element signature="e#5233#5261#0" expanded="false" />
+                <element signature="e#2281#3003#0" expanded="false" />
+                <element signature="e#4885#5119#0" expanded="false" />
+                <element signature="e#5159#5342#0" expanded="false" />
+                <element signature="e#5381#5409#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -160,9 +158,9 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/withnet.css" />
         <option value="$PROJECT_DIR$/images/boardnet.js" />
-        <option value="$PROJECT_DIR$/boardnet.js" />
         <option value="$PROJECT_DIR$/withnet.html" />
         <option value="$PROJECT_DIR$/board.js" />
+        <option value="$PROJECT_DIR$/boardnet.js" />
       </list>
     </option>
   </component>
@@ -376,12 +374,12 @@
       <workItem from="1503414936792" duration="936000" />
       <workItem from="1503457506259" duration="28788000" />
       <workItem from="1503548543728" duration="17482000" />
-      <workItem from="1503626198324" duration="10050000" />
+      <workItem from="1503626198324" duration="11052000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125668000" />
+    <option name="totallyTimeSpent" value="126670000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -526,14 +524,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/socket.io.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8372">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/newroom.css" />
     <entry file="file://$PROJECT_DIR$/newroom.html" />
     <entry file="file://$PROJECT_DIR$/socket.js" />
@@ -561,28 +551,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boardnet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="257" column="0" lean-forward="false" selection-start-line="257" selection-start-column="0" selection-end-line="257" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-            <element signature="e#2261#2983#0" expanded="false" />
-            <element signature="e#4737#4971#0" expanded="false" />
-            <element signature="e#5011#5194#0" expanded="false" />
-            <element signature="e#5233#5261#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/withnet.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
@@ -604,12 +572,42 @@
     <entry file="file://$PROJECT_DIR$/board.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
-          <caret line="57" column="1" lean-forward="false" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding>
-            <element signature="e#1980#2702#0" expanded="false" />
-            <element signature="e#4238#4472#0" expanded="false" />
-            <element signature="e#4512#4695#0" expanded="false" />
-            <element signature="e#4734#4762#0" expanded="false" />
+            <element signature="e#1979#2701#0" expanded="false" />
+            <element signature="e#4237#4471#0" expanded="false" />
+            <element signature="e#4511#4694#0" expanded="false" />
+            <element signature="e#4733#4761#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/socket.io.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/withnet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-449">
+          <caret line="112" column="26" lean-forward="true" selection-start-line="112" selection-start-column="26" selection-end-line="112" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boardnet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="176" column="25" lean-forward="false" selection-start-line="176" selection-start-column="25" selection-end-line="176" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+            <element signature="e#2281#3003#0" expanded="false" />
+            <element signature="e#4885#5119#0" expanded="false" />
+            <element signature="e#5159#5342#0" expanded="false" />
+            <element signature="e#5381#5409#0" expanded="false" />
           </folding>
         </state>
       </provider>
