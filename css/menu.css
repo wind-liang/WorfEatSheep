@@ -6,37 +6,61 @@
     background-size:cover;
 }
 #gameWithoutNet{
-    background-color: #4CAF50; /* Green */
     /*background: url(../images/sheep.gif);*/
+    font-family: ;
     position:absolute;
-    top: 6rem;
+    top: 5.9rem;
     left: 3rem;
-    border: none;
-    color: white;
-    padding: 25px 55px;
+    border: solid #B2B1B1 10px;
+    color: #e89c69;
+    padding: 20px 50px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 0.8rem;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 #gameWithNet{
-    background-color: #4CAF50; /* Green */
     /*background: url(../images/sheep.gif);*/
     position:absolute;
-    top: 8.5rem;
+    top: 8.4rem;
     left: 3rem;
-    border: none;
-    color: white;
+    border: solid #B2B1B1 10px;
+    color: #e89c69;
     padding: 25px 55px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 0.8rem;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+#gameHelp{
+    /*background: url(../images/sheep.gif);*/
+    position:absolute;
+    top: 10.9rem;
+    left: 3rem;
+    border: solid #B2B1B1 10px;
+    color: #e89c69;
+    padding: 25px 55px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8rem;
+}
+/*#gameHelp{*/
+    /*background-color: #4CAF50; !* Green *!*/
+    /*!*background: url(../images/sheep.gif);*!*/
+    /*position:absolute;*/
+    /*top: 10.5rem;*/
+    /*left: 3rem;*/
+    /*border: none;*/
+    /*color: white;*/
+    /*padding: 25px 55px;*/
+    /*text-align: center;*/
+    /*text-decoration: none;*/
+    /*display: inline-block;*/
+    /*font-size: 0.8rem;*/
+    /*border-radius: 10px;*/
+    /*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);*/
+/*}*/
 #gameWithoutNet:active{
     background-position: bottom right;
     color: #000;
@@ -52,22 +76,7 @@
     color: #000;
     outline: none; /* hide dotted outline in Firefox */
 }
-#gameHelp{
-    background-color: #4CAF50; /* Green */
-    /*background: url(../images/sheep.gif);*/
-    position:absolute;
-    top: 11rem;
-    left: 3rem;
-    border: none;
-    color: white;
-    padding: 25px 55px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 0.8rem;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
+
 footer {
     font-size: 40px;
     position:absolute;
