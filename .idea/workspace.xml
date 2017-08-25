@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cec84410-2c2a-42d8-b407-a6ee83490d9a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/withnet.css" afterPath="$PROJECT_DIR$/css/withnet.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/withnet.html" afterPath="$PROJECT_DIR$/withnet.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -32,8 +30,8 @@
       <file leaf-file-name="withnet.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/withnet.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="74" column="34" lean-forward="false" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
+            <state relative-caret-position="335">
+              <caret line="112" column="26" lean-forward="false" selection-start-line="112" selection-start-column="26" selection-end-line="112" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -331,12 +329,12 @@
       <workItem from="1503414936792" duration="936000" />
       <workItem from="1503457506259" duration="28788000" />
       <workItem from="1503548543728" duration="17482000" />
-      <workItem from="1503626198324" duration="7655000" />
+      <workItem from="1503626198324" duration="8307000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123273000" />
+    <option name="totallyTimeSpent" value="123925000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -568,8 +566,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/withnet.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="74" column="34" lean-forward="false" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
+        <state relative-caret-position="335">
+          <caret line="112" column="26" lean-forward="false" selection-start-line="112" selection-start-column="26" selection-end-line="112" selection-end-column="26" />
           <folding />
         </state>
       </provider>

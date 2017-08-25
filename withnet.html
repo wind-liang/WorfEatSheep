@@ -110,6 +110,7 @@
 
     document.getElementById("onemore").onclick = function () {
         me.emit("onemore",{user_id : him})
+        alert("请等待对方确认！");
     };
     function leave() {
         if(me!=0){
