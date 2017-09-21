@@ -31,6 +31,7 @@
 
 <!--<div id="leave">离开房间</div>-->
 <div id="onemore">再来一局</div>
+<div id="changerole">改为狼方</div>
 <script >
     "use strict";
     var board = new Board(container, sheepText,"images/");	// 创建棋盘
@@ -39,6 +40,7 @@
     var me=0;
     var him;
     var start=false
+    window.role=0
     function startGameA(m,h,r) {
         //startGame.innerText="重新开始"
         if(start){
@@ -52,6 +54,13 @@
         document.getElementById("join").style.display="none";
 //        document.getElementById("leave").style.display="block";
         document.getElementById("onemore").style.display="block";
+        document.getElementById("changerole").style.display="block";
+        if(r==0){
+            document.getElementById("changerole").innerText="改为羊方"
+        }else{
+            document.getElementById("changerole").innerText="改为狼方"
+        }
+
     }
     function newRoom()
     {
@@ -65,8 +74,10 @@
             socket.on('getPartner', function (data) {
                 partner=data.user_id;
                 socket.emit('giveHisId',{ user_id : partner})
+                window.role=0
                 startGameA(socket,partner,0);
                 oneMore()
+                changeRole()
                 leave()
             });
             socket.emit('newRoom',{ user_id : s})
@@ -90,8 +101,10 @@
         {
             var socket = io.connect('http://101.236.29.78:3000');
             socket.on('getOwnid', function (data) {
+                window.role=1
                 startGameA(socket,s,1)
                 oneMore()
+                changeRole()
                 leave();
             });
 
@@ -112,6 +125,11 @@
         me.emit("onemore",{user_id : him})
         alert("请等待对方确认！");
     };
+
+    document.getElementById("changerole").onclick = function () {
+        me.emit("changeRole",{user_id : him})
+        alert("请等待对方确认！");
+    };
     function leave() {
         if(me!=0){
             me.on('leave', function () {
@@ -124,17 +142,48 @@
             me.on('agreeOneMore', function () {
                 if(confirm("对方请求再来一局，是否同意")) {
                     me.emit('agree',{  user_id : him})
-                    startGameA(me,him);
+                    startGameA(me,him, window.role);
                 } else {
                     me.emit('disagree',{ user_id : him})
                 }
 
             });
             me.on('agree', function () {
-                startGameA(me,him)
+                startGameA(me,him, window.role)
             });
             me.on('disagree', function () {
                 alert("对方不同意继续！")
+            });
+        }
+
+    }
+
+    function changeRole() {
+        if(me!=0){
+            me.on('agreeChangeRole', function () {
+                if(confirm("对方请求刚换角色重开游戏，是否同意")) {
+                    me.emit('agreeRole',{  user_id : him})
+                    if(window.role==0){
+                        window.role=1
+                    }else{
+                        window.role=0
+                    }
+                    startGameA(me,him, window.role);
+                } else {
+                    me.emit('disagreeRole',{ user_id : him})
+                }
+
+            });
+            me.on('agreeRole', function () {
+                if(window.role==0){
+                    window.role=1
+                }else{
+                    window.role=0
+                }
+                startGameA(me,him, window.role)
+            });
+            me.on('disagreeRole', function () {
+                alert("对方不同意刚换角色！")
             });
         }
 

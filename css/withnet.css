@@ -49,6 +49,23 @@
     border-radius: 10px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+#changerole{
+    background-color: #D2B48C; /* Green */
+    /*background: url(../images/sheep.gif);*/
+    position:absolute;
+    top: 49px;
+    left: 360px;
+    margin-left:10px;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: none;
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
 #leave{
     background-color: #D2B48C; /* Green */
     /*background: url(../images/sheep.gif);*/
