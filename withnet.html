@@ -39,14 +39,14 @@
     var me=0;
     var him;
     var start=false
-    function startGameA(m,h) {
+    function startGameA(m,h,r) {
         //startGame.innerText="重新开始"
         if(start){
             board.endGame()
         }
         me=m;
         him=h;
-        board.startGame(sheeps,lesshheeps,me,him)
+        board.startGame(sheeps,lesshheeps,me,him,r)
         start=true
         document.getElementById("new").style.display="none";
         document.getElementById("join").style.display="none";
@@ -65,7 +65,7 @@
             socket.on('getPartner', function (data) {
                 partner=data.user_id;
                 socket.emit('giveHisId',{ user_id : partner})
-                startGameA(socket,partner);
+                startGameA(socket,partner,0);
                 oneMore()
                 leave()
             });
@@ -90,7 +90,7 @@
         {
             var socket = io.connect('http://101.236.29.78:3000');
             socket.on('getOwnid', function (data) {
-                startGameA(socket,s)
+                startGameA(socket,s,1)
                 oneMore()
                 leave();
             });

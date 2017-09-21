@@ -57,17 +57,19 @@ Board.prototype.endGame=function(){
         }
     }
 }
-Board.prototype.startGame=function(sheeps,lesssheeps,me,him){
+Board.prototype.startGame=function(sheeps,lesssheeps,me,him,role){
     this.him=him
     this.me=me
     this.end=false;
+    this.role=role; //0代表狼，1代表羊
+    this.r=0;
     var t=this;
-    var previous=0;
+    this.previous=0
     me.on('getStep', function (data) {
         var sq=data.step;
-        if(sq!=previous){
-            t.clickSquare(sq);
-            previous=sq;
+        if(sq!= t.previous){
+            t.drawStep(sq);
+            t.previous=sq;
         }
 
     });
@@ -114,17 +116,89 @@ Board.prototype.startGame=function(sheeps,lesssheeps,me,him){
     this.flushBoard();
 }
 
-
-// 点击棋盘的响应函数。点击棋盘（棋子或者空位置），就会调用该函数。sq_是点击的位置
-var previous=0;
-Board.prototype.clickSquare = function(sq_) {
-
+Board.prototype.drawStep = function(sq_){
     var sq = sq_;						// 点击的位置
 
+
+    var pc = this.pos.squares[sq];	// 点击的棋子
+
+    if(pc==0&&this.sqSelected==0&&this.pos.sdPlayer==2){
+        this.addSheep(sq);
+        this.worfLive();
+        this.worfLive();
+        this.flushBoard();
+    }
+    if (pc && pc==this.pos.sdPlayer) {
+        // 点击了己方棋子，直接选中该子
+
+        // if (this.mvLast != 0) {
+        //     this.drawSquare(SRC(this.mvLast), false);
+        //     this.drawSquare(DST(this.mvLast), false);
+        // }
+        if(pc==2&&this.pos.sheeps>0){
+            return;
+        }
+        if (this.sqSelected) {
+            this.drawSquare(this.sqSelected, false);
+        }
+        this.drawSquare(sq, true);
+        this.sqSelected = sq;
+
+    } else if (pc==0&&this.sqSelected > 0) {
+        // 点击的不是己方棋子（对方棋子或者无子的位置），但有子选中了(一定是自己的子)，那么执行这个走法
+        this.addMove(MOVE(this.sqSelected, sq));
+        this.worfLive();
+        this.worfLive();
+        this.flushBoard();
+
+    }
+    log(this.pos.sheeps);
+    log(this.pos.liveSheeps);
+    log(this.pos.worfs);
+    if(this.pos.worfs<=0){
+        if(!this.end){
+            alert("羊胜利！")
+            this.end=true
+        }
+
+    }
+    if(this.pos.liveSheeps<=this.lesssheeps&&this.pos.sheeps==0){
+        if(this.end){
+            alert("狼胜利！")
+            this.end=true
+        }
+
+    }
+    if(this.pos.sdPlayer==1){
+        this.sheepText.innerHTML="未下的羊："+this.pos.sheeps+"<br>请狼走";
+    }
+    if(this.pos.sdPlayer==2){
+        this.sheepText.innerHTML="未下的羊："+this.pos.sheeps+"<br>请羊走";
+    }
+
+
+
+}
+// 点击棋盘的响应函数。点击棋盘（棋子或者空位置），就会调用该函数。sq_是点击的位置
+
+Board.prototype.clickSquare = function(sq_) {
+    log("r:"+this.r)
+    if(this.role==0){
+        if(this.r%2==1){
+            return;
+        }
+    }
+    if(this.role==1){
+        if(this.r%2==0){
+            return;
+        }
+    }
+    var sq = sq_;					// 点击的位置
+
     if(!isNaN(sq)){
-        if(previous!=sq){
+        if( this.previous!=sq){
             this.me.emit('setStep',{ step : sq, user_id : this.him})
-            previous=sq;
+            this.previous=sq;
         }
 
     }
@@ -193,8 +267,9 @@ Board.prototype.clickSquare = function(sq_) {
 Board.prototype.addMove = function(mv) {
     // 判断这步棋是否合法
     if (!this.pos.legalMove(mv)) {
-        return;
+        return ;
     }
+    this.r++;
     this.pos.movePiece(mv)
     this.sqSelected = 0;
     if(this.pos.sdPlayer==1){
@@ -202,11 +277,13 @@ Board.prototype.addMove = function(mv) {
     }else{
         this.pos.sdPlayer=1;
     }
+
 }
 Board.prototype.addSheep=function (sq) {
     if(!this.pos.addSheep(sq)){
         return
     }
+    this.r++;
     this.sqSelected = 0;
     if(this.sdPlayer==1){
         this.pos.sdPlayer=2;
