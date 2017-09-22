@@ -246,7 +246,7 @@ Board.prototype.clickSquare = function(sq_) {
 
     }
     if(this.pos.liveSheeps<=this.lesssheeps&&this.pos.sheeps==0){
-        if(this.end){
+        if(!this.end){
             alert("狼胜利！")
             this.end=true
         }
