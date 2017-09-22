@@ -69,7 +69,7 @@
 
     var socket = io.connect('http://101.236.29.78:3000');
 
-   
+
 
 
     socket.on('rooms', function (data) {
@@ -131,7 +131,7 @@
 
             socket.on('newRoomSuccess', function () {
                 document.getElementById("list").style.display="none";
-                document.getElementById("sheeptext").innerText="请等待他人进入房间"
+                document.getElementById("sheepText").innerText="请等待他人进入房间"
                 alert("创建房间成功，快把房间名告诉你的小伙伴吧！")
             });
 
