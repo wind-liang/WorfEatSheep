@@ -25,6 +25,32 @@
 <div style="text-align:center;white-space:nowrap">
     <div id="container"></div>
     <div id="sheepText" style="position: absolute; top: 49px; left: 20px;font-size:25px; color: sienna" align="left">欢迎来到狼吃羊 </div>
+    <div id="list" style="height:300px;width:250px;overflow:auto">
+        <table id="tableID">
+            <tr>
+                <th>房间名</th>
+                <th>游戏状态</th>
+            </tr>
+            <tr>
+                <td>点击对应房间名 </td>
+                <td>游戏中</td>
+            </tr>
+            <tr>
+                <td>进入游戏</td>
+                <td>游戏中</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>游戏中</td>
+            </tr>
+            <tr>
+                <td>222</td>
+                <td>游戏中</td>
+            </tr>
+
+        </table>
+    </div>
+
 </div>
 <div id="new">创建房间</div>
 <div id="join">加入房间</div>
@@ -40,6 +66,19 @@
     var me=0;
     var him;
     var start=false
+
+    var socket = io.connect('http://101.236.29.78:3000');
+    socket.on('rooms', function (data) {
+        var rooms=data.rooms
+        deleteTable();
+        for ( var key in rooms) {
+      //通过遍历对象属性的方法，遍历键值对，获得key，然后通过 对象[key]获得对应的值
+            var name = key;
+            var value = rooms[key];
+            addRow(name,value)
+        }
+
+    });
     window.role=0
     function startGameA(m,h,r) {
         //startGame.innerText="重新开始"
@@ -55,6 +94,7 @@
 //        document.getElementById("leave").style.display="block";
         document.getElementById("onemore").style.display="block";
         document.getElementById("changerole").style.display="block";
+        document.getElementById("list").style.display="none";
         if(r==0){
             document.getElementById("changerole").innerText="改为羊方"
         }else{
@@ -69,7 +109,10 @@
 
         if(s)//如果返回的有内容
         {
-            var socket = io.connect('http://101.236.29.78:3000');
+            if(s.length>8){
+                alert("长度太长了，请重新建房")
+                return
+            }
             var partner=""
             socket.on('getPartner', function (data) {
                 partner=data.user_id;
@@ -83,6 +126,7 @@
             socket.emit('newRoom',{ user_id : s})
 
             socket.on('newRoomSuccess', function () {
+                document.getElementById("list").style.display="none";
                 alert("创建房间成功，快把房间名告诉你的小伙伴吧！")
             });
 
@@ -99,7 +143,6 @@
 
         if(s)//如果返回的有内容
         {
-            var socket = io.connect('http://101.236.29.78:3000');
             socket.on('getOwnid', function (data) {
                 window.role=1
                 startGameA(socket,s,1)
@@ -188,7 +231,62 @@
         }
 
     }
+    function deleteTable() {
+        var t=document.getElementById('tableID')
+        var currentRows = t.rows.length;
+        while(currentRows>5){
+            t.deleteRow(currentRows-1)
+            currentRows = t.rows.length;
+        }
 
+    }
+    function addRow(name,status) {
+        //原来的行数    比如：此处获得表格的行数是5，则每一行对应的index是0~4，所以下面在insertRow时，使用的是表格的当前行数
+        var currentRows = document.getElementById("tableID").rows.length;
+        var insertTr = document.getElementById("tableID").insertRow(currentRows);
+        var insertTd = insertTr.insertCell(0);
+        insertTd.innerHTML = name;
+
+
+        insertTd = insertTr.insertCell(1);
+        if(status==0){
+            insertTd.innerHTML = "等待中";
+            table.rows[currentRows].cells[0].onclick = function () {
+                tableText(this);
+            };
+        }else{
+            insertTd.innerHTML = "游戏中";
+        }
+
+
+    }
+    var table = document.getElementById("tableID");
+//    if (table != null) {
+//        for (var i = 0; i < table.rows.length; i++) {
+//         //   for (var j = 0; j < table.rows[i].cells.length; j++)
+//                table.rows[i].cells[0].onclick = function () {
+//                    tableText(this);
+//                };
+//        }
+//    }
+
+    function tableText(tableCell) {
+        var s = tableCell.innerHTML
+        if (confirm("确定加入房间 " + s + " 吗？")) {
+            socket.on('getOwnid', function (data) {
+                window.role = 1
+                startGameA(socket, s, 1)
+                oneMore()
+                changeRole()
+                leave();
+            });
+
+            socket.on('joinRoomFailed', function () {
+                alert("加入房间失败，房间名不存在")
+            });
+            socket.emit('joinRoom', {user_id: s})
+        }
+    }
 </script>
 </body>
 </html>
