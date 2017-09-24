@@ -76,7 +76,15 @@ Board.prototype.startGame=function(sheeps,lesssheeps,me,him,role){
     this.lesssheeps=lesssheeps;
     this.imgSquares = [];			// img数组，对应棋盘上的90个位置区域
     this.pos = new Position(sheeps);
-    this.sheepText.innerHTML="未下的羊："+this.pos.sheeps+"<br>请狼走";
+
+    if (this.role == 0) {
+        this.sheepText.innerHTML = "你的身份：狼<br>" + "未下的羊：" + this.pos.sheeps + "<br>请狼走";
+    } else {
+        this.sheepText.innerHTML = "你的身份：羊<br>" + "未下的羊：" + this.pos.sheeps + "<br>请狼走";
+    }
+
+
+
     this.pos.fromFen("9/9/2w/1sss/1s3s/1sss/2w/9/9 r - - 0 1");	// 根据FEN串初始化棋局
     var style=this.style
     style.position = "relative";
@@ -117,8 +125,10 @@ Board.prototype.startGame=function(sheeps,lesssheeps,me,him,role){
 }
 
 Board.prototype.drawStep = function(sq_){
+    if(this.end){
+        return
+    }
     var sq = sq_;						// 点击的位置
-
 
     var pc = this.pos.squares[sq];	// 点击的棋子
 
@@ -170,10 +180,20 @@ Board.prototype.drawStep = function(sq_){
 
     }
     if(this.pos.sdPlayer==1){
-        this.sheepText.innerHTML="未下的羊："+this.pos.sheeps+"<br>请狼走";
+        if(this.role==0){
+            this.sheepText.innerHTML="你的身份：狼<br>"+"未下的羊："+this.pos.sheeps+"<br>请狼走";
+        }else{
+            this.sheepText.innerHTML="你的身份：羊<br>"+"未下的羊："+this.pos.sheeps+"<br>请狼走";
+        }
+
     }
     if(this.pos.sdPlayer==2){
-        this.sheepText.innerHTML="未下的羊："+this.pos.sheeps+"<br>请羊走";
+        if(this.role==0){
+            this.sheepText.innerHTML="你的身份：狼<br>"+"未下的羊："+this.pos.sheeps+"<br>请羊走";
+        }else{
+            this.sheepText.innerHTML="你的身份：羊<br>"+"未下的羊："+this.pos.sheeps+"<br>请羊走";
+        }
+
     }
 
 
@@ -182,6 +202,9 @@ Board.prototype.drawStep = function(sq_){
 // 点击棋盘的响应函数。点击棋盘（棋子或者空位置），就会调用该函数。sq_是点击的位置
 
 Board.prototype.clickSquare = function(sq_) {
+    if(this.end){
+        return
+    }
     log("r:"+this.r)
     if(this.role==0){
         if(this.r%2==1){
@@ -253,11 +276,22 @@ Board.prototype.clickSquare = function(sq_) {
 
     }
     if(this.pos.sdPlayer==1){
-        this.sheepText.innerHTML="未下的羊："+this.pos.sheeps+"<br>请狼走";
+        if(this.role==0){
+            this.sheepText.innerHTML="你的身份：狼<br>"+"未下的羊："+this.pos.sheeps+"<br>请狼走";
+        }else{
+            this.sheepText.innerHTML="你的身份：羊<br>"+"未下的羊："+this.pos.sheeps+"<br>请狼走";
+        }
+
     }
     if(this.pos.sdPlayer==2){
-        this.sheepText.innerHTML="未下的羊："+this.pos.sheeps+"<br>请羊走";
+        if(this.role==0){
+            this.sheepText.innerHTML="你的身份：狼<br>"+"未下的羊："+this.pos.sheeps+"<br>请羊走";
+        }else{
+            this.sheepText.innerHTML="你的身份：羊<br>"+"未下的羊："+this.pos.sheeps+"<br>请羊走";
+        }
+
     }
+
 
 
 
